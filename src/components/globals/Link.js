@@ -2,8 +2,8 @@ import React from 'react'
 
 
 // Define component
-export const Link = () => {
+export const Link = (href, ) => {
   return (
-    <div>Link</div>
+    <a href={href} >Link</a>
   )
 }
