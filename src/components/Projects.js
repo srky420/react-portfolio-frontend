@@ -7,9 +7,11 @@ import { Project } from "./Project";
 export const Projects = () => {
     return (
         <section className="container projects-section">
-            <h2 className="heading" style={{ 'textAlign': 'center', 'fontSize': '4rem' }}>Projects</h2>
+            <h2 className="projects-heading">Projects</h2>
             <div className="projects">
-                <Project data={work[0]} />
+            {work.slice(0, 3).map((item, index) => (
+                <Project data={item} key={"project" + index} />
+            ))}
             </div>
         </section>
     )

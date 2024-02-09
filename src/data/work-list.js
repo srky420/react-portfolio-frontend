@@ -12,8 +12,9 @@ export const work = [
     {
         link: 'https://fitt-fitness-app.netlify.app/',
         gitLink: 'https://github.com/srky420/fitness-app-react-tailwind',
-        img: './img/fitness-project.JPG',
-        title: 'FITT Gym Web App',
+        img: './img/projects/fitness-project.jpeg',
+        name: 'FITT',
+        title: 'Fitness App',
         desc: 'FITT: A Fitness/Gym website that portrays the services, trainers and programs this gym offers. Users can navigate the website to find offered programs, gym trainers and monthly pricing packages offered by the gym. Users can also find detailed view of each program and trainer. The website also shows client testimonials as evidence of their high-quality services. The website is fully responsive for desktop, laptop, tablet and mobile devices.',
         tags: 'React, ReactRouter, TailwindCSS',
         availability: 'deployed'
@@ -21,8 +22,9 @@ export const work = [
     {
         link: 'https://bites-restuarant.netlify.app/',
         gitLink: 'https://github.com/srky420/restuarant-website-vanilla',
-        img: './img/bites-restuarant-project.JPG',
-        title: 'BITES Restuarant Website',
+        img: './img/projects/restuarant-project.jpeg',
+        name: 'BITES',
+        title: 'Restuarant Site',
         desc: 'A Restuarant business website as one of my personal projects created using HTML, CSS, JS, SASS and jQuery. It utilizes MealDB API to fetch menu items. This business is focused on creating online customer base through promotion of its diverse menu and promotion of its mobile application.',
         tags: 'Django, JS',
         availability: 'deployed'
