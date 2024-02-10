@@ -13,7 +13,8 @@ export const Hero = () => {
                 <button className="btn hero-btn-outline">Projects</button>
             </div>
             <div className="hero-img">
-              <img src={"./img/profile-02.png"} alt="profile-img" />
+              <img src={"./img/profile.png"} alt="profile-img" />
+              <div className="profile-overlay"></div>
             </div>
         </div>
     </section>

@@ -9,7 +9,7 @@ export const Projects = () => {
         <section className="container projects-section">
             <h2 className="projects-heading">Projects</h2>
             <div className="projects">
-            {work.slice(0, 3).map((item, index) => (
+            {work.slice(0, 4).map((item, index) => (
                 <Project data={item} key={"project" + index} />
             ))}
             </div>

@@ -32,9 +32,10 @@ export const work = [
     {
         link: 'https://srky420.pythonanywhere.com/news/',
         gitLink: 'https://github.com/srky420/capstone-django',
-        img: './img/news-project.JPG',
-        title: 'News App',
-        desc: 'A news aggreator using Django and JavaScript. Utilizes external API (NewsAPI) to fetch news data and displays it in appropriate format. Has user authentication with email verification and dynamic tabs using JavaScript.',
+        img: './img/projects/news-project.jpeg',
+        name: 'NEWS',
+        title: 'Aggregator App',
+        desc: 'A News aggreator app created using Django and JavaScript. Frontend utilizes Bootstrap for elegant, responsive design and JavaScript to create fetch requests to backed for each News tab. It also consumes external API (NewsAPI) to fetch news data and displays it in appropriate format. Users can sign up and manage their News subscriptions.',
         tags: 'Django, JS',
         availability: 'deployed'
     },
