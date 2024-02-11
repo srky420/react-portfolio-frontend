@@ -4,7 +4,7 @@ import React from "react";
 // Define component
 export const About = () => {
     return (
-        <section className="about-section">
+        <section className="about-section" id="about">
             <div className="container">
                 <div className="about">
                     <div className="about-img">

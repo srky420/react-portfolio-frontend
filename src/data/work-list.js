@@ -15,7 +15,7 @@ export const work = [
         img: './img/projects/fitness-project.jpeg',
         name: 'FITT',
         title: 'Fitness App',
-        desc: 'FITT: A Fitness/Gym website that portrays the services, trainers and programs this gym offers. Users can navigate the website to find offered programs, gym trainers and monthly pricing packages offered by the gym. Users can also find detailed view of each program and trainer. The website also shows client testimonials as evidence of their high-quality services. The website is fully responsive for desktop, laptop, tablet and mobile devices.',
+        desc: 'FITT: A Fitness/Gym website that portrays the services, trainers and programs this gym offers. Users can navigate the website to find offered programs, gym trainers and monthly pricing packages offered by the gym. Users can also find detailed view of each program and trainer. The website also shows client testimonials as evidence of their high-quality services.',
         tags: 'React, ReactRouter, TailwindCSS',
         availability: 'deployed'
     },

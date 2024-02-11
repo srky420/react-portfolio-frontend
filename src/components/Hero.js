@@ -16,6 +16,8 @@ export const Hero = () => {
               <img src={"./img/profile.png"} alt="profile-img" />
               <div className="profile-overlay"></div>
             </div>
+            <img src={"./img/spiral-arrow.svg"} alt="arrow" className="arrow-decor" />
+            <img src={"./img/three-lines.svg"} alt="line" className="line-decor" />
         </div>
     </section>
   )
