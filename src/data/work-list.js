@@ -5,9 +5,9 @@ export const work = [
         img: './assets/img/projects/ecommerce-project.jpeg',
         name: 'MYSHOP',
         title: 'E-commerce App',
-        desc: 'This is an e-commerce web app for a made-up retailer store. The store sells a bunch of products which are categorized. Users can browse products, sort them, add to cart and delete them from cart. The products data is fetched from an external REST API. Adding products to cart works in real-time. Users can also increase/decrease quantities from cart page and see their total being calculated in real-time.',
+        desc: 'MYSHOP: An e-commerce web app for a made-up retailer store. The store sells a bunch of products which are categorized. Users can browse products, sort them, add to cart and delete them from cart. The products data is fetched from an external REST API. Adding products to cart works in real-time. Users can also increase/decrease quantities from cart page and see their total being calculated in real-time.',
         tags: 'React, ReactRouter, TailwindCSS',
-        tech: ['react', 'tailwind'],
+        tech: ['<i className="devicon-react-original colored"></i>', 'tailwind'],
         availability: 'deployed'
     },
     {

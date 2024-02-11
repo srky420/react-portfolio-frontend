@@ -206,11 +206,10 @@ html {
 /* Techstack */
 .techstack {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
   gap: 2rem;
-  justify-content: space-evenly;
-  align-items: center;
+  place-items: center;
   margin: 5rem 0;
 }
 
@@ -517,7 +516,7 @@ html {
   }
 
   .techstack {
-    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .about, .contact {
