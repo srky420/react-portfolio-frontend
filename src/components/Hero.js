@@ -9,15 +9,15 @@ export const Hero = () => {
             <div className="hero-text">
                 <p className="header">Hi I'm Shahrukh</p>
                 <h1>A Frontend Developer</h1>
-                <button className="btn hero-btn">Résumé</button>
-                <button className="btn hero-btn-outline">Projects</button>
+                <a className="btn hero-btn" href={"./assets/resume.pdf"} target="_blank" download="Shahrukh-Resume" rel="noreferrer">Résumé</a>
+                <a className="btn hero-btn-outline" href="#work">Projects</a>
             </div>
             <div className="hero-img">
-              <img src={"./img/profile.png"} alt="profile-img" />
+              <img src={"./assets/img/profile.png"} alt="profile-img" />
               <div className="profile-overlay"></div>
             </div>
-            <img src={"./img/spiral-arrow.svg"} alt="arrow" className="arrow-decor" />
-            <img src={"./img/three-lines.svg"} alt="line" className="line-decor" />
+            <img src={"./assets/img/spiral-arrow.svg"} alt="arrow" className="arrow-decor" />
+            <img src={"./assets/img/three-lines.svg"} alt="line" className="line-decor" />
         </div>
     </section>
   )

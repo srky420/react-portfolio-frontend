@@ -8,7 +8,7 @@ export const Contact = () => {
             <div className="container">
                 <div className="contact">
                     <div className="contact-img">
-                        <img src={"./img/contact.svg"} alt="about-img" />
+                        <img src={"./assets/img/contact.svg"} alt="about-img" />
                     </div>
                     <div className="contact-text">
                         <p className="header">Lets work together</p>

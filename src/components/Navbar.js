@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 // Define component
 export default function Navbar() {
 
     const [navToggle, setNavToggle] = useState(false);
+    const [navScroll, setNavScroll] = useState(false);
+
+    useEffect(() => {
+        window.onscroll = () => {
+            if (window.scrollY > 0) {
+                setNavScroll(true);
+            }
+            else {
+                setNavScroll(false)
+            }
+        }
+    }, [navScroll])
 
     return (
-        <nav className="navbar">
+        <nav className={navScroll ? "navbar nav-scroll" : "navbar"}>
             <div className="logo">
-                <i className="fa-solid fa-laptop-code"></i> srky.dev
+                <i className="fa-solid fa-laptop-code"></i> SRKY Dev
             </div>
             <ul className={navToggle ? "navlist navlist-open" : "navlist"}>
                 <li><a href="#about" onClick={() => setNavToggle(false)}>About</a></li>

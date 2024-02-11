@@ -8,7 +8,7 @@ export const About = () => {
             <div className="container">
                 <div className="about">
                     <div className="about-img">
-                        <img src={"./img/about.svg"} alt="about-img" />
+                        <img src={"./assets/img/about.svg"} alt="about-img" />
                     </div>
                     <div className="about-text">
                         <p className="header">Learn more</p>
