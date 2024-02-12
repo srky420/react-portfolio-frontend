@@ -20,9 +20,9 @@ export default function Navbar() {
 
     return (
         <nav className={navScroll ? "navbar nav-scroll" : "navbar"}>
-            <div className="logo">
+            <a className="logo" href="#">
                 <i className="fa-solid fa-laptop-code"></i> SRKY Dev
-            </div>
+            </a>
             <ul className={navToggle ? "navlist navlist-open" : "navlist"}>
                 <li><a href="#about" onClick={() => setNavToggle(false)}>About</a></li>
                 <li><a href="#work" onClick={() => setNavToggle(false)}>Work</a></li>
