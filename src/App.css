@@ -195,12 +195,15 @@ html {
   background-color: transparent;
   color: blueviolet;
   opacity: 1;
-  transition: 0.2s opacity linear;
+  transition: 0.2s all linear;
 }
 
-.hero a:hover {
+.hero-btn-outline:hover {
+  box-shadow: 0 3px 5px 0 blueviolet;
+}
+
+.hero-btn:hover {
   opacity: 0.8;
-  cursor: pointer;
 }
 
 /* Techstack */
@@ -322,9 +325,11 @@ html {
 .project-img {
   width: 100%;
   height: 30rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(200, 200, 200);
+  scroll-behavior: smooth;
   position: relative;
-  overflow-y: auto;
+  overflow-y: hidden;
   -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
   scrollbar-width: none;  /* Hide scrollbar for Firefox */
 }
@@ -335,7 +340,6 @@ html {
 
 .project-img img {
   width: 100%;
-  border-radius: 1rem;
 }
 
 .project-text {
@@ -360,13 +364,17 @@ html {
   margin: 5rem 0;
 }
 
-.contact-text .location {
+.contact-info {
+  margin: 1rem 0;
+}
+
+.contact-info > div {
   display: flex;
   align-items: center;
   font-size: 1.2rem;
+  margin: 0.5rem 0;
   gap: 1rem;
-  margin: 1rem 0;
-  color: rgb(25, 25, 25);
+  color: rgb(40, 40, 40);
 }
 
 .contact-text .socials {
@@ -526,7 +534,7 @@ html {
     text-align: center;
   }
 
-  .location {
+  .contact-info > div {
     justify-content: center;
   }
 

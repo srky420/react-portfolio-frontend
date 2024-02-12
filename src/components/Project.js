@@ -3,9 +3,10 @@ import React from "react";
 
 // Define component
 export const Project = ({ data }) => {
+
     return (
         <div className="project">
-            <div className="project-img">
+            <div className="project-img" onClick={(e) => e.currentTarget.scrollBy(0, 250)} onMouseOut={(e) => e.currentTarget.scrollTo(0, 0)}>
                 <img src={data.img} alt="project-img" />
             </div>
             <div className="project-text">

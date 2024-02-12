@@ -27,7 +27,7 @@ export const work = [
         img: './assets/img/projects/restuarant-project.jpeg',
         name: 'BITES',
         title: 'Restuarant Site',
-        desc: 'A Restuarant business website as one of my personal projects created using HTML, CSS, JS, SASS and jQuery. It utilizes MealDB API to fetch menu items. This business is focused on creating online customer base through promotion of its diverse menu and promotion of its mobile application.',
+        desc: 'BITES: A Restuarant business website created using HTML, CSS, JS, SASS and jQuery. It utilizes MealDB API to fetch menu items. This business is focused on creating online customer base through promotion of its diverse menu and mobile application.',
         tags: 'HTML, CSS, SASS, JS, jQuery',
         tech: ['html', 'css', 'sass', 'js'],
         availability: 'deployed'
@@ -38,7 +38,7 @@ export const work = [
         img: './assets/img/projects/news-project.jpeg',
         name: 'NEWS',
         title: 'Aggregator App',
-        desc: 'A News aggreator app created using Django and JavaScript. Frontend utilizes Bootstrap for elegant, responsive design and JavaScript to create fetch requests to backed for each News tab. It also consumes external API (NewsAPI) to fetch news data and displays it in appropriate format. Users can sign up and manage their News subscriptions.',
+        desc: 'A News aggreator app created using Django and JavaScript. Frontend utilizes Bootstrap for elegant, responsive design and JavaScript to create fetch requests to backend for each News tab. It also consumes external API (NewsAPI) to fetch news data and displays it in appropriate format. Users can sign up and manage their News subscriptions.',
         tags: 'Django, JS',
         tech: ['django', 'bootstrap', 'js'],
         availability: 'deployed'

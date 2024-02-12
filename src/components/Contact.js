@@ -14,9 +14,15 @@ export const Contact = () => {
                         <p className="header">Lets work together</p>
                         <h2 className="heading">Contact Me</h2>
                         <p className="para">I'm open to both on-site and remote jobs wether project based or contract based.</p>
-                        <div className="location">
-                            <i className="fa-solid fa-location-dot"></i>
-                            <p>Quetta, Baluchistan, Pakistan</p>
+                        <div className="contact-info">
+                            <div>
+                                <i className="fa-solid fa-location-dot"></i>
+                                <p>Quetta, Baluchistan, Pakistan</p>
+                            </div>
+                            <div>
+                                <i className="fa-solid fa-phone"></i>
+                                <p>+92-343-8146487</p>
+                            </div>
                         </div>
                         <ul className="navlist socials">
                             <li><a href="mailto:srky420@gmail.com" target="_blank" rel="noreferrer"><i className="fa-solid fa-envelope"></i></a></li>
