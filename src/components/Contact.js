@@ -11,7 +11,7 @@ export const Contact = () => {
                         <img src={"./assets/img/contact.svg"} alt="about-img" />
                     </div>
                     <div className="contact-text">
-                        <p className="header">Lets work together</p>
+                        <p className="header">Let's work together</p>
                         <h2 className="heading">Contact Me</h2>
                         <p className="para">I'm open to both on-site and remote jobs wether project based or contract based.</p>
                         <div className="contact-info">
