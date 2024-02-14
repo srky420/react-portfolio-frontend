@@ -5,7 +5,7 @@ export const work = [
         img: './assets/img/projects/ecommerce-project.jpeg',
         name: 'MYSHOP',
         title: 'E-commerce App',
-        desc: 'MYSHOP: An e-commerce web app for a made-up retailer store. The store sells a bunch of products which are categorized. Users can browse products, sort them, add to cart and delete them from cart. The products data is fetched from an external REST API. Adding products to cart works in real-time. Users can also increase/decrease quantities from cart page and see their total being calculated in real-time.',
+        desc: 'MYSHOP: An e-commerce web app for a made-up retailer store, created in ReactJS and TailwindCSS. The store sells a bunch of products which are categorized. Users can browse products, sort them, add to cart and delete them from cart. The products data is fetched from an external REST API. Adding products to cart works in real-time. Users can also increase/decrease quantities from cart page and see their total being calculated in real-time.',
         tags: 'React, ReactRouter, TailwindCSS',
         tech: ['<i className="devicon-react-original colored"></i>', 'tailwind'],
         availability: 'deployed'
@@ -16,7 +16,7 @@ export const work = [
         img: './assets/img/projects/fitness-project.jpeg',
         name: 'FITT',
         title: 'Fitness App',
-        desc: 'FITT: A Fitness/Gym website that portrays the services, trainers and programs this gym offers. Users can navigate the website to find offered programs, gym trainers and monthly pricing packages offered by the gym. Users can also find detailed view of each program and trainer. The website also shows client testimonials as evidence of their high-quality services.',
+        desc: 'FITT: A Fitness/Gym website that portrays the services, trainers and programs this gym offers, created in ReactJS and TailwindCSS. Users can navigate the website to find offered programs, gym trainers and monthly pricing packages offered by the gym. Users can also find detailed view of each program and trainer. The website also shows client testimonials as evidence of their high-quality services.',
         tags: 'React, ReactRouter, TailwindCSS',
         tech: ['react', 'tailwind'],
         availability: 'deployed'
