@@ -4,9 +4,19 @@ import React from "react";
 // Define component
 export const Project = ({ data }) => {
 
+    const handleScroll = (e) => {
+        const div = e.currentTarget;
+        if (div.scrollHeight - div.scrollTop - div.clientHeight <= 0) {
+            div.scrollTo(0, 0);
+        }
+        else {
+            div.scrollBy(0, 250);
+        }
+    }
+
     return (
         <div className="project">
-            <div className="project-img" onClick={(e) => e.currentTarget.scrollBy(0, 250)} onMouseOut={(e) => e.currentTarget.scrollTo(0, 0)}>
+            <div className="project-img" onClick={handleScroll} onMouseOut={(e) => e.currentTarget.scrollTo(0, 0)}>
                 <img src={data.img} alt="project-img" />
             </div>
             <div className="project-text">
