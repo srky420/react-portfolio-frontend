@@ -12,7 +12,7 @@ export const About = () => {
     })
 
     return (
-        <section id="about" ref={el}>
+        <section className="about-section" id="about" ref={el}>
             <div className="container">
                 <div className={isIntersecting ? "about from-right animate" : "about from-right"}>
                     <div className="about-img">
