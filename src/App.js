@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
@@ -8,6 +9,7 @@ import { Projects } from './components/Projects';
 import { Techstack } from './components/Techstack';
 
 function App() {
+
   return (
     <div>
       <Navbar />

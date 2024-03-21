@@ -315,11 +315,6 @@ html {
   gap: 5rem;
 }
 
-.project:nth-of-type(2) .project-text, 
-.project:nth-of-type(4) .project-text {
-  order: -1;
-}
-
 .project:last-of-type {
   margin: 0;
 }
@@ -591,4 +586,28 @@ html {
   100% {
     transform: translateY(0);
   }
+}
+
+/* Scroll transitions */
+.from-left {
+  transform: translateX(-10%);
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.from-right {
+  transform: translateX(10%);
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.from-bottom {
+  transform: translateY(20%);
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.animate {
+  transform: translateX(0) translateY(0);
+  opacity: 1;
 }

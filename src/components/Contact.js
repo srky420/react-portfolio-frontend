@@ -1,12 +1,20 @@
 import React from "react";
+import useIntersectElements from "../hooks/useIntersectElement";
 
 
 // Define component
 export const Contact = () => {
+
+    const [el, isIntersecting] = useIntersectElements({
+        root: null,
+        rootMargin: '50px',
+        threshold: 1.0
+    })
+
     return (
-        <section className="contact-section" id="contact">
+        <section className="contact-section" id="contact" ref={el}>
             <div className="container">
-                <div className="contact">
+                <div className={isIntersecting ? "contact from-left animate" : "contact from-left"}>
                     <div className="contact-img">
                         <img src={"./assets/img/contact.svg"} alt="about-img" />
                     </div>

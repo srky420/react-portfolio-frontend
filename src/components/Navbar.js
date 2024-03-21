@@ -19,7 +19,7 @@ export default function Navbar() {
     }, [navScroll])
 
     return (
-        <nav className={navScroll ? "navbar nav-scroll" : "navbar"}>
+        <div className={navScroll ? "navbar nav-scroll" : "navbar"}>
             <a className="logo" href="#">
                 <i className="fa-solid fa-laptop-code"></i> SRKY Dev
             </a>
@@ -38,6 +38,6 @@ export default function Navbar() {
                 <div className="line"></div>
                 <div className="line"></div>
             </button>
-        </nav>
+        </div>
     )
 }

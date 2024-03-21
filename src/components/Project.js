@@ -1,8 +1,16 @@
 import React from "react";
+import useIntersectElements from "../hooks/useIntersectElement";
 
 
 // Define component
-export const Project = ({ data }) => {
+export const Project = ({ data, index }) => {
+
+    // Intersection observer hook
+    const [el, isIntersecting] = useIntersectElements({
+        root: null,
+        rootMargin: '50px',
+        threshold: 0.25
+    });
 
     const handleScroll = (e) => {
         const div = e.currentTarget;
@@ -15,19 +23,41 @@ export const Project = ({ data }) => {
     }
 
     return (
-        <div className="project">
-            <div className="project-img" onClick={handleScroll} onMouseOut={(e) => e.currentTarget.scrollTo(0, 0)}>
-                <img src={data.img} alt="project-img" />
-            </div>
-            <div className="project-text">
-                <p className="header">{ data.name }</p>
-                <h2 className="heading">{ data.title }</h2>
-                <p className="para">{ data.desc }</p>
-                <ul className="navlist socials">
-                    <li><a href={data.link} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li>
-                    <li><a href={data.gitLink}><i className="fa-brands fa-github"></i></a></li>
-                </ul>
-            </div>
+        <div className="project" ref={el}>
+            {index % 2 === 0 ? 
+            <>
+                <div className={isIntersecting ? "project-img from-left animate" : "project-img from-left"}
+                    onClick={handleScroll} 
+                    onMouseOut={(e) => e.currentTarget.scrollTo(0, 0)}>
+                    <img src={data.img} alt="project-img" />
+                </div>
+                <div className={isIntersecting ? "project-text from-right animate" : "project-text from-right"}>
+                    <p className="header">{ data.name }</p>
+                    <h2 className="heading">{ data.title }</h2>
+                    <p className="para">{ data.desc }</p>
+                    <ul className="navlist socials">
+                        <li><a href={data.link} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li>
+                        <li><a href={data.gitLink}><i className="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </>
+            : 
+            <>
+                <div className={isIntersecting ? "project-text from-left animate" : "project-text from-left"}>
+                    <p className="header">{ data.name }</p>
+                    <h2 className="heading">{ data.title }</h2>
+                    <p className="para">{ data.desc }</p>
+                    <ul className="navlist socials">
+                        <li><a href={data.link} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li>
+                        <li><a href={data.gitLink}><i className="fa-brands fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div className={isIntersecting ? "project-img from-right animate" : "project-img from-right"}
+                    onClick={handleScroll} 
+                    onMouseOut={(e) => e.currentTarget.scrollTo(0, 0)}>
+                    <img src={data.img} alt="project-img" />
+                </div>
+            </>}
         </div>
     )
 }
