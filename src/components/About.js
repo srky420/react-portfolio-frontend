@@ -8,7 +8,7 @@ export const About = () => {
     const [el, isIntersecting] = useIntersectElements({
         root: null,
         rootMargin: '50px',
-        threshold: 1.0
+        threshold: 0.5
     })
 
     return (

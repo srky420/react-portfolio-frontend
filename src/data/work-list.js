@@ -7,7 +7,17 @@ export const work = [
         title: 'E-commerce App',
         desc: 'MYSHOP: An e-commerce web app for a made-up retailer store, created in ReactJS and TailwindCSS. The store sells a bunch of products which are categorized. Users can browse products, sort them, add to cart and delete them from cart. The products data is fetched from an external REST API. Adding products to cart works in real-time. Users can also increase/decrease quantities from cart page and see their total being calculated in real-time.',
         tags: 'React, ReactRouter, TailwindCSS',
-        tech: ['<i className="devicon-react-original colored"></i>', 'tailwind'],
+        tech: ['react', 'tailwind'],
+        availability: 'deployed'
+    },
+    {
+        link: 'https://coinspace-crypto-aggregator.netlify.app/',
+        gitLink: 'https://github.com/srky420/crypto-aggregator-react',
+        img: './assets/img/projects/crypto-project.jpeg',
+        name: 'COINSPACE',
+        title: 'Crypto App',
+        desc: 'COINSPACE: A CryptoAggegator app that focuses on providing Crypto related information to the users. This business focuses on providing tools for users to create effective Crypto porfolio and track their financial results. Utilizes CoinMarketCap API to fetch Crypto coins data.',
+        tech: ['react', 'tailwind'],
         availability: 'deployed'
     },
     {
@@ -29,7 +39,7 @@ export const work = [
         title: 'Restuarant Site',
         desc: 'BITES: A Restuarant business website created using HTML, CSS, JS, SASS and jQuery. It utilizes MealDB API to fetch menu items. This business is focused on creating online customer base through promotion of its diverse menu and mobile application.',
         tags: 'HTML, CSS, SASS, JS, jQuery',
-        tech: ['html', 'css', 'sass', 'js'],
+        tech: ['HTML', 'SASS', 'Javascript'],
         availability: 'deployed'
     },
     {
@@ -40,7 +50,7 @@ export const work = [
         title: 'Aggregator App',
         desc: 'A News aggreator app created using Django and JavaScript. Frontend utilizes Bootstrap for elegant, responsive design and JavaScript to create fetch requests to backend for each News tab. It also consumes external API (NewsAPI) to fetch news data and displays it in appropriate format. Users can sign up and manage their News subscriptions.',
         tags: 'Django, JS',
-        tech: ['django', 'bootstrap', 'js'],
+        tech: ['django', 'bootstrap', 'javascript'],
         availability: 'deployed'
     },
     {

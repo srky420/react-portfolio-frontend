@@ -34,6 +34,9 @@ export const Project = ({ data, index }) => {
                 <div className={isIntersecting ? "project-text from-right animate" : "project-text from-right"}>
                     <p className="header">{ data.name }</p>
                     <h2 className="heading">{ data.title }</h2>
+                    <ul className="project-tech">
+                        { data.tech.map((item, index) => <li key={"tech" + index}>{ item[0].toUpperCase() + item.slice(1, ) }</li>) }
+                    </ul>
                     <p className="para">{ data.desc }</p>
                     <ul className="navlist socials">
                         <li><a href={data.link} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li>
@@ -46,6 +49,9 @@ export const Project = ({ data, index }) => {
                 <div className={isIntersecting ? "project-text from-left animate" : "project-text from-left"}>
                     <p className="header">{ data.name }</p>
                     <h2 className="heading">{ data.title }</h2>
+                    <ul className="project-tech">
+                        { data.tech.map((item, index) => <li key={"tech" + index}>{ item[0].toUpperCase() + item.slice(1, ) }</li>) }
+                    </ul>
                     <p className="para">{ data.desc }</p>
                     <ul className="navlist socials">
                         <li><a href={data.link} target="_blank" rel="noreferrer"><i className="fa-solid fa-up-right-from-square"></i></a></li>

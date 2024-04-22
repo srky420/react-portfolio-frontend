@@ -54,6 +54,23 @@ html {
   text-align: center;
 }
 
+.loader-div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 0.5rem solid gray;
+  border-top: 0.5rem solid black;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -343,9 +360,25 @@ html {
   font-size: 1rem;
 }
 
-.project-text ul {
+.project-text .navlist {
   justify-content: center;
   margin: 1rem 0;
+}
+
+.project-tech {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: start;
+  margin: 1rem 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.project-tech li {
+  padding: 0.5rem 1rem;
+  border: 2px solid gray;
+  border-radius: 2rem;
+  color: rgb(25, 25, 25);
 }
 
 /* Contact */
@@ -585,6 +618,15 @@ html {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

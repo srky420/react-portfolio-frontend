@@ -8,7 +8,7 @@ export const Contact = () => {
     const [el, isIntersecting] = useIntersectElements({
         root: null,
         rootMargin: '50px',
-        threshold: 1.0
+        threshold: 0.4
     })
 
     return (
