@@ -229,7 +229,7 @@ html {
 .techstack {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   gap: 2rem;
   place-items: center;
   margin: 5rem 0;
@@ -586,6 +586,10 @@ html {
 @media screen and (max-width: 480px) {
   html {
     font-size: 12px;
+  }
+
+  .navlist {
+    gap: 1rem;
   }
 
   .container {
